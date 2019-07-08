@@ -24,9 +24,9 @@ numParse(stringWithNumber)
 | "foo 12.3m bar" | 12300000 |
 | "foo bar 1,23B" | 1230000000 |
 | "foo bar 0,123t." | 123000000000 |
-| ~~ "1.234,56" ~~ | 1 (expected 1234) * |
+| ~~"1.234,56"~~ | 1 *(expected 1234)** |
 
-As of yet it is not possible to convert numbers that contain both a comma and a period. Currently trying to wrap my head around this, if anyone has suggestions/solutions to solve this problem feel free to get in touch or add a pull request. 
+`*` = As of yet it is not possible to convert numbers that contain both a comma and a period. Currently trying to wrap my head around this, if anyone has suggestions/solutions to solve this problem feel free to get in touch or add a pull request. 
 
 
 ## How to use
@@ -50,4 +50,5 @@ import numParse from './numParse'
 
 ### Testing
 This project now also contains unit tests (Jest). To run the tests run `npm test` in your terminal from the project directory.*
-Make sure you run `npm install` first to install dependencies.
+
+`*` = Make sure you run `npm install` first to install dependencies.
