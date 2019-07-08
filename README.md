@@ -26,7 +26,7 @@ numParse(stringWithNumber)
 
 
 ## How to use
-1) Clone or download the repo
+1) Clone or download this repository.
 2) Copy the numParse.js file to your project directory.
 3) Import the function in the file you want to use it in, you can name the function however you like when importing it.
 4) Change the import path according to your project's file structure. 
