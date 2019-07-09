@@ -11,7 +11,7 @@ numParse(stringWithNumber)
 
 ## Functionality
 * Finds the number in the provided string.
-* Converts commas to periods (e.g. 1,23M => 1.23M).
+* Converts commas to decimals (e.g. 1,23M => 1.23M).
 * Converts thousands ('k'/'K'), millions ('m'/'M'), billions ('b'/'B') and trillions ('t'/'T').
 * Returns the number from the string as an integer.
 
@@ -26,7 +26,7 @@ numParse(stringWithNumber)
 | "foo bar 0,123t." | 123000000000 |
 | ~~"1.234,56"~~ | 1 *(expected 1234)** |
 
-`*` = As of yet it is not possible to convert numbers that contain both a comma and a period. Currently trying to wrap my head around this, if anyone has suggestions/solutions to solve this problem feel free to get in touch or add a pull request. 
+`*` = As of yet it is not possible to convert numbers that contain both a comma and a decimal point. Currently trying to wrap my head around this, if anyone has suggestions/solutions to solve this problem feel free to get in touch or add a pull request. 
 
 
 ## How to use
